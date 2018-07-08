@@ -56,7 +56,7 @@ sml_time *sml_time_parse(sml_buffer *buf) {
 		break;
 	case SML_TYPE_LIST:
 	{
-		int len=sml_buf_get_next_length(buf);
+		sml_buf_get_next_length(buf);
 		u32 *t1=sml_u32_parse(buf);
 		i16 *t2=sml_i16_parse(buf);
 		i16 *t3=sml_i16_parse(buf);
